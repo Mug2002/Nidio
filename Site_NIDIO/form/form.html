@@ -1,0 +1,77 @@
+<html>
+<head>
+
+
+<title>Formulario</title>
+
+
+<link rel="stylesheet"  type="text/css" href="style.css">
+
+</head>
+<body>
+<h3 id="oneClickRegAvatargenHead">1. insira seus dados</h3>
+				<h2 id="oneClickRegNormalHead">Registro</h2>
+				<div id="inputUsername_1c">
+					<span>&nbsp;Nome de usuário:</span> <br>
+					<input type="text" class="loginUsername" name="username_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {$('#loginForm input[name=password_1c]').focus();return false;}" onchange="Registration.checkInput('name', this.value, this)" data-tracked="true">
+				</div>
+				<div id="inputPassword_1c">
+					<span>&nbsp;Senha:</span><br>
+					<input type="password" class="loginPassword" name="password_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#loginForm input[name=passwordconfirm_1c]').focus();return false;}" onchange="Registration.checkInput('password', this.value, this)" data-tracked="true">
+				</div>
+				<div id="inputPasswordConfirm_1c">
+					<span>&nbsp;Confirme a senha:</span><br>
+					<input type="password" class="loginPassword" name="passwordconfirm_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
+				</div>
+				<div id="inputEmail_1c">
+					<span>&nbsp;Endereço de e-mail:</span> <br>
+					<input type="text" class="loginUsername" name="email_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
+				</div>
+				
+<p>
+sexo?<br>
+<input type="radio" name="S" value="F">Feminino
+<input type="radio" name="S" value="M">masculino
+<input type="radio" name="S" checked value"NDA">Não desejo informar
+
+<p>
+Deseja atualizações? 
+<input type="checkbox" name="carta" checked>Facebook
+<input type="checkbox" name="mail" checked>E-mail
+<input type="checkbox" name="fone" checked>SMS
+
+<p>
+Selecione a foto:<input type="file" name="foto">  </p>
+
+<p>Descrição:
+<textarea name="recla" cols="50" rows="10">
+</textarea>
+</p>
+
+<p>Religião <select name="cidade">
+<option value="CR">Cristianismo </option>
+<option value="BD">Budismo </option>
+<option value="ES">Esoterismo </option>
+<option value="JD">Judaismo </option>
+    <option value="IS">Islamismo </option>
+    <option value="HD">Hinduímo </option>
+    <option value="EP">Espiritísmo </option>
+    <option value="XT">Xintoísmo </option>
+    <option value="SK">Sikhismo </option>
+    <option value="WC">Wicca </option>
+    <option value="NP">Neopaganismo </option>
+    <option value="nada" selected> Selecione </option> </select></p>
+    
+    <p> <input type="radio" name="S" value="Y"><span>Eu aceito os <a href="http://legal.innogames.com/west/br/agb" target="_blank"> Termos e Condições</a> e a <a href="http://legal.innogames.com/west/br/privacy" target="_blank"> Política de Privacidade</a>.</span> </p>
+    
+<p>
+<input type="submit" value ="enviar">
+    <input type="reset" value ="limpar"></p>
+   
+    
+
+
+</form>
+
+</body>
+</html>
