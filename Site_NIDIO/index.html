@@ -52,7 +52,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">Sobre Nós</a></li>
         <li><a href="#services" class="page-scroll">Portfólio</a></li>      
-        <li><a href="#testimonials" class="page-scroll">Qualquer coisa</a></li>
+        <li><a href="#testimonials" class="page-scroll">Cadastro</a></li>
         <li><a href="#contact" class="page-scroll">Tinder</a></li>
       </ul>
     </div>
@@ -257,6 +257,35 @@
 <div id="testimonials" class="text-center">
   <div class="overlay">
     <div class="container">
+        <h3 id="oneClickRegAvatargenHead">1. insira seus dados</h3>
+				<h2 id="oneClickRegNormalHead">Registro</h2>
+				<div id="inputUsername_1c">
+					<span>&nbsp;Nome de usuário:</span> <br>
+					<input type="text" class="loginUsername" name="username_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {$('#loginForm input[name=password_1c]').focus();return false;}" onchange="Registration.checkInput('name', this.value, this)" data-tracked="true">
+				</div>
+				<div id="inputPassword_1c">
+					<span>&nbsp;Senha:</span><br>
+					<input type="password" class="loginPassword" name="password_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#loginForm input[name=passwordconfirm_1c]').focus();return false;}" onchange="Registration.checkInput('password', this.value, this)" data-tracked="true">
+				</div>
+				<div id="inputPasswordConfirm_1c">
+					<span>&nbsp;Confirme a senha:</span><br>
+					<input type="password" class="loginPassword" name="passwordconfirm_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
+				</div>
+				<div id="inputEmail_1c">
+					<span>&nbsp;Endereço de e-mail:</span> <br>
+					<input type="text" class="loginUsername" name="email_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
+				</div>
+				
+<p>
+sexo?<br>
+<input type="radio" name="S" value="F">Feminino
+<input type="radio" name="S" value="M">Masculino
+   
+    <p> <input type="radio" name="S" value="Y"><span>Eu aceito os <a href="http://legal.innogames.com/west/br/agb" target="_blank"> Termos e Condições</a> e a <a href="http://legal.innogames.com/west/br/privacy" target="_blank"> Política de Privacidade</a>.</span> </p>
+    
+<p>
+<input type="submit" value ="enviar">
+    <input type="reset" value ="limpar"></p>
       <!--<div class="section-title">
         <h2>Testimonials</h2>
         <hr>

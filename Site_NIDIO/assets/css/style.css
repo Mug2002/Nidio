@@ -392,9 +392,16 @@ ol.type li a:hover {
 #testimonials hr {
 	background: rgba(255,255,255,0.6);
 }
-#testimonial p {
-	color: #fff;
-	font-size: 16px;
+#testimonials p {
+	color: rgb(5, 5, 5);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+#testimonials span {
+	color: rgb(5, 5, 5);
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 32px;
 }
