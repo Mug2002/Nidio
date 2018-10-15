@@ -259,21 +259,37 @@
     <div class="container">
         <h3 id="oneClickRegAvatargenHead">1. insira seus dados</h3>
 				<h2 id="oneClickRegNormalHead">Registro</h2>
-				<div id="inputUsername_1c">
-					<span>&nbsp;Nome de usuário:</span> <br>
-					<input type="text" class="loginUsername" name="username_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {$('#loginForm input[name=password_1c]').focus();return false;}" onchange="Registration.checkInput('name', this.value, this)" data-tracked="true">
+				<div id="inputUser_Pri">
+					<span>&nbsp;Primeiro nome:</span> <br>
+					<input type="text" class="User_Pri" name="User_Pri_" value="" >
 				</div>
-				<div id="inputPassword_1c">
-					<span>&nbsp;Senha:</span><br>
-					<input type="password" class="loginPassword" name="password_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#loginForm input[name=passwordconfirm_1c]').focus();return false;}" onchange="Registration.checkInput('password', this.value, this)" data-tracked="true">
+				<div id="inputSobrenome">
+					<span>&nbsp;Sobrenome:</span><br>
+					<input type="text" class="Sobrenome" name="Sobrenome_" value="" >
+        </div>
+        <div id="inputIdade">
+            <span>&nbsp;idade:</span><br>
+            <input type="number" class="Idade" name="Idade_" value="" >
+          </div>
+          <div id="inputEstado">
+              <span>&nbsp;Estado:</span><br>
+              <input type="text" class="Estado" name="Estado_" value="" >
+            </div>
+            <div id="inputCidade">
+                <span>&nbsp;idade:</span><br>
+                <input type="text" class="Cidade" name="Cidade_" value="" >
+              </div>
+              <div id="inputTelefone">
+                  <span>&nbsp;Telefone:</span><br>
+                  <input type="number" class="Telefone" name="Telefone_" value="" >
+                </div>
+				<div id="inputEstado_Civil">
+					<span>&nbsp;Estado Civil:</span><br>
+					<input type="text" class="Estado_Civil" name="Estado_Civil_" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
 				</div>
-				<div id="inputPasswordConfirm_1c">
-					<span>&nbsp;Confirme a senha:</span><br>
-					<input type="password" class="loginPassword" name="passwordconfirm_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
-				</div>
-				<div id="inputEmail_1c">
-					<span>&nbsp;Endereço de e-mail:</span> <br>
-					<input type="text" class="loginUsername" name="email_1c" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
+				<div id="inputSexo">
+					<span>&nbsp;Sexo:</span> <br>
+					<input type="text" class="Estado_Civil" name="Estado_Civil_" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
 				</div>
 				
 <p>
