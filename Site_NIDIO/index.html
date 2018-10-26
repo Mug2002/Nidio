@@ -257,46 +257,47 @@
 <div id="testimonials" class="text-center">
   <div class="overlay">
     <div class="container">
+      <form name="cadastrar" method="post" action="cadastro.php">
         <h3 id="oneClickRegAvatargenHead">1. insira seus dados</h3>
 				<h2 id="oneClickRegNormalHead">Registro</h2>
-				<div id="inputUser_Pri">
+				<div id="inputnome_Pri">
 					<span>&nbsp;Primeiro nome:</span> <br>
-					<input type="text" class="User_Pri" name="User_Pri_" value="" >
+					<input type="text" class="User_Pri" name="nome_pri" value="" >
 				</div>
 				<div id="inputSobrenome">
 					<span>&nbsp;Sobrenome:</span><br>
-					<input type="text" class="Sobrenome" name="Sobrenome_" value="" >
+					<input type="text" class="Sobrenome" name="nome_sobre" value="" >
         </div>
         <div id="inputIdade">
             <span>&nbsp;idade:</span><br>
-            <input type="number" class="Idade" name="Idade_" value="" >
+            <input type="number" class="Idade" name="Idade" value="" >
           </div>
           <div id="inputEstado">
               <span>&nbsp;Estado:</span><br>
-              <input type="text" class="Estado" name="Estado_" value="" >
+              <input type="text" class="Estado" name="Estado" value="" >
             </div>
             <div id="inputCidade">
-                <span>&nbsp;idade:</span><br>
-                <input type="text" class="Cidade" name="Cidade_" value="" >
+                <span>&nbsp;Cidade:</span><br>
+                <input type="text" class="Cidade" name="Cidade" value="" >
               </div>
               <div id="inputTelefone">
                   <span>&nbsp;Telefone:</span><br>
-                  <input type="number" class="Telefone" name="Telefone_" value="" >
+                  <input type="number" class="Telefone" name="Telefone" value="" >
                 </div>
 				<div id="inputEstado_Civil">
 					<span>&nbsp;Estado Civil:</span><br>
-					<input type="text" class="Estado_Civil" name="Estado_Civil_" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
+					<input type="text" class="Estado_Civil" name="Estado_Civil" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) {  $('#loginForm input[name=email_1c]').focus();return false;}" onchange="Registration.checkPasswordConfirm(this.value,$('#loginForm input[name=password_1c]').val(),this)" data-tracked="true">
 				</div>
 				<div id="inputSexo">
 					<span>&nbsp;Sexo:</span> <br>
-					<input type="text" class="Estado_Civil" name="Estado_Civil_" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
+					<input type="text" class="Estado_Civil" name="sexo" value="" onkeydown="if ((arguments[0]||window.event).keyCode == 13) { $('#acceptAGB_1c').focus();return false;}" onchange="Registration.checkInput('email', this.value, this)" data-tracked="true">
 				</div>
-				
-<p>
+				</form>
+<!--<p>
 sexo?<br>
 <input type="radio" name="S" value="F">Feminino
 <input type="radio" name="S" value="M">Masculino
-   
+-->
     <p> <input type="radio" name="S" value="Y"><span>Eu aceito os <a href="http://legal.innogames.com/west/br/agb" target="_blank"> Termos e Condições</a> e a <a href="http://legal.innogames.com/west/br/privacy" target="_blank"> Política de Privacidade</a>.</span> </p>
     
 <p>
@@ -363,7 +364,7 @@ sexo?<br>
         </div>
       </div>
     </div>
-    <div class="col-md-8 col-md-offset-2">
+    <!--<div class="col-md-8 col-md-offset-2">
       <h3>Mande uma menssagem</h3>
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
@@ -387,7 +388,7 @@ sexo?<br>
         <div id="success"></div>
         <button type="submit" class="btn btn-custom btn-lg">Enviar</button>
       </form>
-    </div>
+    </div>-->
   </div>
 </div>
 <!-- Footer Section -->
