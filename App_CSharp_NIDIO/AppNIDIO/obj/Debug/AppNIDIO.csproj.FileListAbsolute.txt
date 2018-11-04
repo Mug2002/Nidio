@@ -1,0 +1,15 @@
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\bin\Debug\AppNIDIO.exe.config
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\bin\Debug\AppNIDIO.exe
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\bin\Debug\AppNIDIO.pdb
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.csprojAssemblyReference.cache
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Properties.Resources.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.ResourceApp.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.csproj.GenerateResource.cache
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.csproj.CoreCompileInputs.cache
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.csproj.CopyComplete
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.exe
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.pdb
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Login.frmLogin.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Menu.frmMenu.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Requisitar.frmReq.resources
