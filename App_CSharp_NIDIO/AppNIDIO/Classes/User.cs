@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace AppNIDIO.Classes
 {
-    class User
+    public class User
     {
+        private int id;
         private string userName;
         private string name;
         private string lastName;
@@ -15,6 +16,7 @@ namespace AppNIDIO.Classes
         private string email;
         private string phone;
 
+        public int Id { get; set; }
         public string UserName { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }

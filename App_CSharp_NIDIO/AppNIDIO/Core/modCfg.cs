@@ -11,7 +11,7 @@ namespace AppNIDIO.Components.Login
 {
     class modLogin
     {
-        private DB db = new DB();
+        private Db db = new Db();
         private User user = new User();
 
 

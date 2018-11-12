@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using AppNIDIO.Core;
 using AppNIDIO.Components.Requisitar;
 
 namespace AppNIDIO.Components.Menu
 {
     public partial class frmMenu : Form
     {
+        ModCore core;
 
-        public frmMenu()
+        public frmMenu(ref ModCore core)
         {
+            this.core = core;
             InitializeComponent();
         }
 
@@ -27,7 +30,7 @@ namespace AppNIDIO.Components.Menu
 
         private void btnReq_Click(object sender, EventArgs e)
         {
-            frmReq frm = new frmReq();
+            frmReq frm = new frmReq(ref this.core);
             frm.Show();
         }
     }

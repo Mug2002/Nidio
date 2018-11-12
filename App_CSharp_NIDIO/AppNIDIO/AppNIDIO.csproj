@@ -48,7 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Config.cs" />
-    <Compile Include="Classes\DB.cs" />
+    <Compile Include="Classes\Db.cs" />
+    <Compile Include="Classes\ReqEvents.cs" />
+    <Compile Include="Classes\Req.cs" />
+    <Compile Include="Classes\Select.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Components\Login\frmLogin.cs">
       <SubType>Form</SubType>
@@ -57,7 +60,8 @@
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="App.cs" />
-    <Compile Include="Components\Login\modLogin.cs" />
+    <Compile Include="Core\modCore.cs" />
+    <Compile Include="Core\modCfg.cs" />
     <Compile Include="Components\Menu\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>

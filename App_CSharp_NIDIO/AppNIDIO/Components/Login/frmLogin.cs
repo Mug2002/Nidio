@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AppNIDIO.Components.Menu;
+using AppNIDIO.Core;
 
 namespace AppNIDIO.Components.Login
 {
     public partial class frmLogin : Form
     {
-        private modLogin control = new modLogin();
+        private ModCore core = new ModCore();
 
         public frmLogin()
         {
@@ -32,18 +33,17 @@ namespace AppNIDIO.Components.Login
                 return;
             }
 
-            //bool response = control.login(userName, userPass);
+            //bool response = core.login(userName, userPass);
 
+            //if (response)
             if (userName == "joseph" && userPass == "123")
             {
-                frmMenu frm = new frmMenu();
+                frmMenu frm = new frmMenu(ref this.core);
                 frm.Show();
             } else
             {
                 MessageBox.Show("Usuario ou Senha incorretos!");
             }
-
-            //MessageBox.Show("Response: " + response.ToString());
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

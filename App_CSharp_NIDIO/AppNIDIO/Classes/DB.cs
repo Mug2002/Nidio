@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 using Oracle.ManagedDataAccess.Client;
 
 namespace AppNIDIO.Classes
 {
-    class DB
+    public class DB
     {
         /* Declarations */
         private Config configs = new Config();
@@ -39,15 +40,24 @@ namespace AppNIDIO.Classes
             this.conn.Dispose();
         }
 
-        public OracleDataReader execQry(string query, List<OracleParameter> args)
+        public OracleDataReader execQry(string query)
         {
             OracleCommand comm = this.conn.CreateCommand();
             comm.CommandText = query;
-            
-            foreach (OracleParameter param in args)
+
+            return comm.ExecuteReader();
+        }
+
+        public OracleDataReader execQry(string query, List<OracleParameter> inParams)
+        {
+            OracleCommand comm = this.conn.CreateCommand();
+            comm.CommandText = query;
+
+            foreach (OracleParameter dbParam in inParams)
             {
-                comm.Parameters.Add(param);
+                comm.Parameters.Add(dbParam);
             }
+
             return comm.ExecuteReader();
         }
 
