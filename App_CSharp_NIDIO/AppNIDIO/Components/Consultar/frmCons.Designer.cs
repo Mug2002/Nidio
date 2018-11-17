@@ -1,6 +1,6 @@
-﻿namespace AppNIDIO.Components.Requisitar
+﻿namespace AppNIDIO.Components.Consultar
 {
-    partial class frmReq
+    partial class frmCons
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,9 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.gpbInfo = new System.Windows.Forms.GroupBox();
-            this.cmbSrv = new System.Windows.Forms.ComboBox();
+            this.txtSts = new System.Windows.Forms.TextBox();
+            this.txtSrv = new System.Windows.Forms.TextBox();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.lblSrv = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.txtDesc = new System.Windows.Forms.TextBox();
@@ -45,24 +47,25 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.gpbBtns = new System.Windows.Forms.GroupBox();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSend = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.gpbEvent = new System.Windows.Forms.GroupBox();
+            this.ltbEvent = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpbFor.SuspendLayout();
             this.gpbInfo.SuspendLayout();
             this.gpbBtns.SuspendLayout();
+            this.gpbEvent.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblReq
             // 
             this.lblReq.AutoSize = true;
             this.lblReq.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReq.Location = new System.Drawing.Point(268, 43);
+            this.lblReq.Location = new System.Drawing.Point(760, 39);
             this.lblReq.Name = "lblReq";
-            this.lblReq.Size = new System.Drawing.Size(103, 24);
+            this.lblReq.Size = new System.Drawing.Size(91, 24);
             this.lblReq.TabIndex = 4;
-            this.lblReq.Text = "Requisitar";
+            this.lblReq.Text = "Consulta";
             // 
             // pictureBox1
             // 
@@ -82,10 +85,10 @@
             this.gpbFor.Controls.Add(this.txtName);
             this.gpbFor.Location = new System.Drawing.Point(12, 113);
             this.gpbFor.Name = "gpbFor";
-            this.gpbFor.Size = new System.Drawing.Size(400, 110);
+            this.gpbFor.Size = new System.Drawing.Size(417, 110);
             this.gpbFor.TabIndex = 5;
             this.gpbFor.TabStop = false;
-            this.gpbFor.Text = "Requisitar para:";
+            this.gpbFor.Text = "Requisitado por:";
             // 
             // lblEmail
             // 
@@ -109,23 +112,27 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Enabled = false;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(73, 66);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(300, 24);
+            this.txtEmail.Size = new System.Drawing.Size(321, 24);
             this.txtEmail.TabIndex = 1;
             // 
             // txtName
             // 
+            this.txtName.Enabled = false;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(73, 27);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(300, 24);
+            this.txtName.Size = new System.Drawing.Size(321, 24);
             this.txtName.TabIndex = 0;
             // 
             // gpbInfo
             // 
-            this.gpbInfo.Controls.Add(this.cmbSrv);
+            this.gpbInfo.Controls.Add(this.txtSts);
+            this.gpbInfo.Controls.Add(this.txtSrv);
+            this.gpbInfo.Controls.Add(this.lblStatus);
             this.gpbInfo.Controls.Add(this.lblSrv);
             this.gpbInfo.Controls.Add(this.lblDesc);
             this.gpbInfo.Controls.Add(this.txtDesc);
@@ -133,21 +140,40 @@
             this.gpbInfo.Controls.Add(this.txtCod);
             this.gpbInfo.Controls.Add(this.lblDate);
             this.gpbInfo.Controls.Add(this.txtDate);
-            this.gpbInfo.Location = new System.Drawing.Point(12, 238);
+            this.gpbInfo.Location = new System.Drawing.Point(12, 232);
             this.gpbInfo.Name = "gpbInfo";
-            this.gpbInfo.Size = new System.Drawing.Size(400, 238);
+            this.gpbInfo.Size = new System.Drawing.Size(417, 244);
             this.gpbInfo.TabIndex = 6;
             this.gpbInfo.TabStop = false;
             this.gpbInfo.Text = "Informações";
             // 
-            // cmbSrv
+            // txtSts
             // 
-            this.cmbSrv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSrv.FormattingEnabled = true;
-            this.cmbSrv.Location = new System.Drawing.Point(83, 76);
-            this.cmbSrv.Name = "cmbSrv";
-            this.cmbSrv.Size = new System.Drawing.Size(136, 26);
-            this.cmbSrv.TabIndex = 9;
+            this.txtSts.Enabled = false;
+            this.txtSts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSts.Location = new System.Drawing.Point(268, 78);
+            this.txtSts.Name = "txtSts";
+            this.txtSts.Size = new System.Drawing.Size(126, 24);
+            this.txtSts.TabIndex = 12;
+            // 
+            // txtSrv
+            // 
+            this.txtSrv.Enabled = false;
+            this.txtSrv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSrv.Location = new System.Drawing.Point(82, 77);
+            this.txtSrv.Name = "txtSrv";
+            this.txtSrv.Size = new System.Drawing.Size(126, 24);
+            this.txtSrv.TabIndex = 11;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(214, 82);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(48, 16);
+            this.lblStatus.TabIndex = 10;
+            this.lblStatus.Text = "Status:";
             // 
             // lblSrv
             // 
@@ -171,11 +197,12 @@
             // 
             // txtDesc
             // 
+            this.txtDesc.Enabled = false;
             this.txtDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesc.Location = new System.Drawing.Point(22, 139);
             this.txtDesc.Multiline = true;
             this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(351, 83);
+            this.txtDesc.Size = new System.Drawing.Size(372, 82);
             this.txtDesc.TabIndex = 6;
             this.txtDesc.Text = "Descreve sua requisição aqui...";
             // 
@@ -191,11 +218,13 @@
             // 
             // txtCod
             // 
+            this.txtCod.BackColor = System.Drawing.SystemColors.Info;
             this.txtCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCod.Location = new System.Drawing.Point(73, 31);
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(93, 24);
             this.txtCod.TabIndex = 4;
+            this.txtCod.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCod_KeyPress);
             // 
             // lblDate
             // 
@@ -209,42 +238,21 @@
             // 
             // txtDate
             // 
+            this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Location = new System.Drawing.Point(225, 31);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(148, 24);
+            this.txtDate.Size = new System.Drawing.Size(169, 24);
             this.txtDate.TabIndex = 1;
             // 
             // gpbBtns
             // 
-            this.gpbBtns.Controls.Add(this.btnClear);
-            this.gpbBtns.Controls.Add(this.btnSend);
             this.gpbBtns.Controls.Add(this.btnExit);
             this.gpbBtns.Location = new System.Drawing.Point(12, 482);
             this.gpbBtns.Name = "gpbBtns";
-            this.gpbBtns.Size = new System.Drawing.Size(400, 57);
+            this.gpbBtns.Size = new System.Drawing.Size(848, 57);
             this.gpbBtns.TabIndex = 7;
             this.gpbBtns.TabStop = false;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(162, 19);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 2;
-            this.btnClear.Text = "Limpar";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(310, 19);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
-            this.btnSend.TabIndex = 1;
-            this.btnSend.Text = "Enviar";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // btnExit
             // 
@@ -256,26 +264,47 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // frmReq
+            // gpbEvent
+            // 
+            this.gpbEvent.Controls.Add(this.ltbEvent);
+            this.gpbEvent.Location = new System.Drawing.Point(445, 113);
+            this.gpbEvent.Name = "gpbEvent";
+            this.gpbEvent.Size = new System.Drawing.Size(415, 363);
+            this.gpbEvent.TabIndex = 8;
+            this.gpbEvent.TabStop = false;
+            this.gpbEvent.Text = "Eventos";
+            // 
+            // ltbEvent
+            // 
+            this.ltbEvent.Enabled = false;
+            this.ltbEvent.FormattingEnabled = true;
+            this.ltbEvent.Location = new System.Drawing.Point(6, 27);
+            this.ltbEvent.MultiColumn = true;
+            this.ltbEvent.Name = "ltbEvent";
+            this.ltbEvent.Size = new System.Drawing.Size(400, 316);
+            this.ltbEvent.TabIndex = 0;
+            // 
+            // frmCons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(428, 551);
+            this.ClientSize = new System.Drawing.Size(872, 551);
+            this.Controls.Add(this.gpbEvent);
             this.Controls.Add(this.gpbBtns);
             this.Controls.Add(this.gpbInfo);
             this.Controls.Add(this.gpbFor);
             this.Controls.Add(this.lblReq);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "frmReq";
-            this.Text = "Requisitar";
-            this.Load += new System.EventHandler(this.frmReq_Load);
+            this.Name = "frmCons";
+            this.Text = "Consultar";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gpbFor.ResumeLayout(false);
             this.gpbFor.PerformLayout();
             this.gpbInfo.ResumeLayout(false);
             this.gpbInfo.PerformLayout();
             this.gpbBtns.ResumeLayout(false);
+            this.gpbEvent.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,10 +327,12 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.GroupBox gpbBtns;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.ComboBox cmbSrv;
         private System.Windows.Forms.Label lblSrv;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.GroupBox gpbEvent;
+        private System.Windows.Forms.ListBox ltbEvent;
+        private System.Windows.Forms.TextBox txtSts;
+        private System.Windows.Forms.TextBox txtSrv;
     }
 }

@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.lblMenu = new System.Windows.Forms.Label();
-            this.btnReq = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCons = new System.Windows.Forms.Button();
-            this.btnCad = new System.Windows.Forms.Button();
-            this.btnInfo = new System.Windows.Forms.Button();
-            this.btnCfg = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.gpbMain = new System.Windows.Forms.GroupBox();
-            this.lblReq = new System.Windows.Forms.Label();
-            this.lblCons = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblCons = new System.Windows.Forms.Label();
+            this.lblReq = new System.Windows.Forms.Label();
             this.gpbOptions = new System.Windows.Forms.GroupBox();
             this.lblExit = new System.Windows.Forms.Label();
             this.lblCfg = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
+            this.btnCfg = new System.Windows.Forms.Button();
+            this.btnReq = new System.Windows.Forms.Button();
+            this.btnCons = new System.Windows.Forms.Button();
+            this.btnCad = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpbMain.SuspendLayout();
             this.gpbOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMenu
@@ -58,72 +58,6 @@
             this.lblMenu.Size = new System.Drawing.Size(63, 24);
             this.lblMenu.TabIndex = 2;
             this.lblMenu.Text = "Menu";
-            // 
-            // btnReq
-            // 
-            this.btnReq.Image = global::AppNIDIO.ResourceApp.register;
-            this.btnReq.Location = new System.Drawing.Point(26, 35);
-            this.btnReq.Name = "btnReq";
-            this.btnReq.Size = new System.Drawing.Size(96, 94);
-            this.btnReq.TabIndex = 0;
-            this.btnReq.UseVisualStyleBackColor = true;
-            this.btnReq.Click += new System.EventHandler(this.btnReq_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AppNIDIO.ResourceApp.logoVeto;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 81);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCons
-            // 
-            this.btnCons.Image = global::AppNIDIO.ResourceApp.analyze;
-            this.btnCons.Location = new System.Drawing.Point(149, 35);
-            this.btnCons.Name = "btnCons";
-            this.btnCons.Size = new System.Drawing.Size(96, 94);
-            this.btnCons.TabIndex = 1;
-            this.btnCons.UseVisualStyleBackColor = true;
-            // 
-            // btnCad
-            // 
-            this.btnCad.Image = global::AppNIDIO.ResourceApp.flat_icon_gestao_financeira;
-            this.btnCad.Location = new System.Drawing.Point(268, 35);
-            this.btnCad.Name = "btnCad";
-            this.btnCad.Size = new System.Drawing.Size(96, 94);
-            this.btnCad.TabIndex = 2;
-            this.btnCad.UseVisualStyleBackColor = true;
-            // 
-            // btnInfo
-            // 
-            this.btnInfo.Image = global::AppNIDIO.ResourceApp.Utilities_System_Information_icon;
-            this.btnInfo.Location = new System.Drawing.Point(29, 35);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(96, 94);
-            this.btnInfo.TabIndex = 3;
-            this.btnInfo.UseVisualStyleBackColor = true;
-            // 
-            // btnCfg
-            // 
-            this.btnCfg.Image = global::AppNIDIO.ResourceApp.unnamed;
-            this.btnCfg.Location = new System.Drawing.Point(148, 35);
-            this.btnCfg.Name = "btnCfg";
-            this.btnCfg.Size = new System.Drawing.Size(96, 94);
-            this.btnCfg.TabIndex = 4;
-            this.btnCfg.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Image = global::AppNIDIO.ResourceApp.exit;
-            this.btnExit.Location = new System.Drawing.Point(267, 35);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(96, 94);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // gpbMain
             // 
@@ -140,14 +74,14 @@
             this.gpbMain.TabStop = false;
             this.gpbMain.Text = "Principal";
             // 
-            // lblReq
+            // label1
             // 
-            this.lblReq.AutoSize = true;
-            this.lblReq.Location = new System.Drawing.Point(46, 132);
-            this.lblReq.Name = "lblReq";
-            this.lblReq.Size = new System.Drawing.Size(54, 13);
-            this.lblReq.TabIndex = 1;
-            this.lblReq.Text = "Requisitar";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(288, 132);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Cadastro";
             // 
             // lblCons
             // 
@@ -158,14 +92,14 @@
             this.lblCons.TabIndex = 2;
             this.lblCons.Text = "Consultar";
             // 
-            // label1
+            // lblReq
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 132);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Cadastro";
+            this.lblReq.AutoSize = true;
+            this.lblReq.Location = new System.Drawing.Point(46, 132);
+            this.lblReq.Name = "lblReq";
+            this.lblReq.Size = new System.Drawing.Size(54, 13);
+            this.lblReq.TabIndex = 1;
+            this.lblReq.Text = "Requisitar";
             // 
             // gpbOptions
             // 
@@ -209,6 +143,76 @@
             this.lblInfo.TabIndex = 8;
             this.lblInfo.Text = "Sobre";
             // 
+            // btnExit
+            // 
+            this.btnExit.Image = global::AppNIDIO.ResourceApp.exit;
+            this.btnExit.Location = new System.Drawing.Point(267, 35);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(96, 94);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Image = global::AppNIDIO.ResourceApp.Utilities_System_Information_icon;
+            this.btnInfo.Location = new System.Drawing.Point(29, 35);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(96, 94);
+            this.btnInfo.TabIndex = 3;
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // btnCfg
+            // 
+            this.btnCfg.Image = global::AppNIDIO.ResourceApp.unnamed;
+            this.btnCfg.Location = new System.Drawing.Point(148, 35);
+            this.btnCfg.Name = "btnCfg";
+            this.btnCfg.Size = new System.Drawing.Size(96, 94);
+            this.btnCfg.TabIndex = 4;
+            this.btnCfg.UseVisualStyleBackColor = true;
+            this.btnCfg.Click += new System.EventHandler(this.btnCfg_Click);
+            // 
+            // btnReq
+            // 
+            this.btnReq.Image = global::AppNIDIO.ResourceApp.register;
+            this.btnReq.Location = new System.Drawing.Point(26, 35);
+            this.btnReq.Name = "btnReq";
+            this.btnReq.Size = new System.Drawing.Size(96, 94);
+            this.btnReq.TabIndex = 0;
+            this.btnReq.UseVisualStyleBackColor = true;
+            this.btnReq.Click += new System.EventHandler(this.btnReq_Click);
+            // 
+            // btnCons
+            // 
+            this.btnCons.Image = global::AppNIDIO.ResourceApp.analyze;
+            this.btnCons.Location = new System.Drawing.Point(149, 35);
+            this.btnCons.Name = "btnCons";
+            this.btnCons.Size = new System.Drawing.Size(96, 94);
+            this.btnCons.TabIndex = 1;
+            this.btnCons.UseVisualStyleBackColor = true;
+            this.btnCons.Click += new System.EventHandler(this.btnCons_Click);
+            // 
+            // btnCad
+            // 
+            this.btnCad.Image = global::AppNIDIO.ResourceApp.flat_icon_gestao_financeira;
+            this.btnCad.Location = new System.Drawing.Point(268, 35);
+            this.btnCad.Name = "btnCad";
+            this.btnCad.Size = new System.Drawing.Size(96, 94);
+            this.btnCad.TabIndex = 2;
+            this.btnCad.UseVisualStyleBackColor = true;
+            this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AppNIDIO.ResourceApp.logoVeto;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(191, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,11 +225,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmMenu";
             this.Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gpbMain.ResumeLayout(false);
             this.gpbMain.PerformLayout();
             this.gpbOptions.ResumeLayout(false);
             this.gpbOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

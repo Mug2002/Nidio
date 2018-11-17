@@ -176,8 +176,6 @@
 	INSERT INTO tbAcs(idAcs,nmAcs,dcAcs) VALUES(1,'padrao','Usuario padrao/cliente');
 	INSERT INTO tbAcs(idAcs,nmAcs,dcAcs) VALUES(2,'adm','Usuario administrador do sistema');
 	Commit;
-/*---------------------------------------------*/
-
 /*---------------+ Tb Servicos +---------------*/
 	INSERT INTO tbSrv(idSrv,nmSrv,dcSrv) VALUES(1,'hardware','Pecas do computador e etc.');
 	INSERT INTO tbSrv(idSrv,nmSrv,dcSrv) VALUES(2,'software','Sistema operacional, aplicativos e etc.');
@@ -185,8 +183,12 @@
 	INSERT INTO tbSrv(idSrv,nmSrv,dcSrv) VALUES(4,'perifericos','Mouse, teclado, monitor e etc.');
 	INSERT INTO tbSrv(idSrv,nmSrv,dcSrv) VALUES(5,'outros','Outros servicos oferecidos por nos.');
 	Commit;
-/*---------------------------------------------*/
-
+/*---------------+ Tb Status +----------------*/
+	INSERT INTO tbSts(idSts,nmSts,dcSts) VALUES(1,'Pendente','Status inicial');
+	INSERT INTO tbSts(idSts,nmSts,dcSts) VALUES(2,'EmProcesso','Tarefa em progresso');
+	INSERT INTO tbSts(idSts,nmSts,dcSts) VALUES(3,'Finalizado','Tarefa completa');
+	INSERT INTO tbSts(idSts,nmSts,dcSts) VALUES(4,'Cancelado','Cancelamento de tarefa');
+	Commit;
 /*---------------+ Tb Usuarios +---------------*/
 	INSERT INTO tbUsr(
 		idUsr, --ID user
@@ -304,6 +306,20 @@ CREATE OR REPLACE PROCEDURE cons_user(
             varVerif := 0;
                 
     END cons_user;
+
+CREATE OR REPLACE PROCEDURE insert_req(
+    varUsr IN NUMERIC,
+    varSrv IN NUMERIC,
+    varDesc IN VARCHAR2
+) AS
+	varId NUMERIC;
+    BEGIN
+	varId = seq_Ids.NEXTVAL;
+        INSERT INTO tbIds (idIds,idUsr,idSrv,dcIds) VALUES (varId,varUsr,varSrv,varDesc);
+        INSERT INTO tbIdev (idIdev,idIds,idUsr,idSts,dtIdev,acIds) VALUES (seq_Idev.NEXTVAL,varId,varUsr,1,AGORA(),"Criou um nova requisição");
+	SELECT varId FROM dual;
+    END insert_req;
+
 
 
 --> Teste de procedures

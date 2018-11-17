@@ -13,3 +13,7 @@ C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.
 C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Login.frmLogin.resources
 C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Menu.frmMenu.resources
 C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Requisitar.frmReq.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Consultar.frmCons.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Cadastro.frmCad.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Core.frmCfg.resources
+C:\Users\joseph\Downloads\Projetos\App_CSharp_NIDIO\AppNIDIO\obj\Debug\AppNIDIO.Components.Core.frmInfo.resources

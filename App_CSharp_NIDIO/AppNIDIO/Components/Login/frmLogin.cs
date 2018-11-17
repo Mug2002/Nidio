@@ -51,6 +51,7 @@ namespace AppNIDIO.Components.Login
             this.txtUser.Clear();
             this.txtPass.Clear();
             this.Close();
+            Application.Exit();
         }
 
         private void chbPass_CheckedChanged(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace AppNIDIO.Classes
         private string pass;
         private string email;
         private string phone;
+        private int acess;
 
         public int Id { get; set; }
         public string UserName { get; set; }
@@ -23,6 +24,7 @@ namespace AppNIDIO.Classes
         public string Pass { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+        public int Acess { get; set; }
 
     }
 }

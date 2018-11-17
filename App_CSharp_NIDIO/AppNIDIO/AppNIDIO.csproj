@@ -53,6 +53,30 @@
     <Compile Include="Classes\Req.cs" />
     <Compile Include="Classes\Select.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Components\Cadastro\frmCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Cadastro\frmCad.Designer.cs">
+      <DependentUpon>frmCad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Consultar\frmCons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Consultar\frmCons.Designer.cs">
+      <DependentUpon>frmCons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Core\frmCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Core\frmCfg.Designer.cs">
+      <DependentUpon>frmCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Core\frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Core\frmInfo.Designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +104,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceApp.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\Cadastro\frmCad.resx">
+      <DependentUpon>frmCad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Consultar\frmCons.resx">
+      <DependentUpon>frmCons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Core\frmCfg.resx">
+      <DependentUpon>frmCfg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Core\frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,10 +173,6 @@
   <ItemGroup>
     <None Include="Resources\Utilities-System-Information-icon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\Cadastro\" />
-    <Folder Include="Components\Consultar\" />
-    <Folder Include="Components\Core\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

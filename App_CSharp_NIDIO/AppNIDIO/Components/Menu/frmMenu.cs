@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using AppNIDIO.Core;
+using AppNIDIO.Components.Core;
 using AppNIDIO.Components.Requisitar;
+using AppNIDIO.Components.Consultar;
+using AppNIDIO.Components.Cadastro;
 
 namespace AppNIDIO.Components.Menu
 {
@@ -31,6 +34,30 @@ namespace AppNIDIO.Components.Menu
         private void btnReq_Click(object sender, EventArgs e)
         {
             frmReq frm = new frmReq(ref this.core);
+            frm.Show();
+        }
+
+        private void btnCons_Click(object sender, EventArgs e)
+        {
+            frmCons frm = new frmCons(ref this.core);
+            frm.Show();
+        }
+
+        private void btnCad_Click(object sender, EventArgs e)
+        {
+            frmCad frm = new frmCad(ref this.core);
+            frm.Show();
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            frmInfo frm = new frmInfo();
+            frm.Show();
+        }
+
+        private void btnCfg_Click(object sender, EventArgs e)
+        {
+            frmCfg frm = new frmCfg(ref this.core);
             frm.Show();
         }
     }
